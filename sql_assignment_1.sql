@@ -28,11 +28,11 @@ txn_number int
 );
 
 insert into "user" (id, name, email,password_hash ,otp)
-values (101,'naiyar','naiyar@gmail.com','000',123),
-(102,'imam','imam@gmail.com','001',124),
-(103,'jauhar','jauhar@gmail.com','002',125),
-(104,'rana','rana@gmail.com','003',126),
-(105,'aftab','aftab@gmail.com','004',127);
+values (101,'shivansh','shivansh@gmail.com','000',123),
+(102,'ankit','ankit@gmail.com','001',124),
+(103,'rahul,'rahul@gmail.com','002',125),
+(104,'kartik','kartik@gmail.com','003',126),
+(105,'ram','ram@gmail.com','004',127);
 
 INSERT INTO order_table (id, user_id, catogory, product_name)
 VALUES 
@@ -91,5 +91,6 @@ add foreign key (category_id) references category(id);
 
 alter table order_table
 drop column catogory;
+
 
 SELECT * FROM order_table;
